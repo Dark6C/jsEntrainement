@@ -84,26 +84,28 @@ let passwordStrength = () => {
     passHelp.classList.remove("d-none");
     passHelp.textContent = "Le mot de passe est très faible";
     passHelp.classList.add("text-danger");
-    console.log("weak1");
+    // console.log("weak1");
   } else if (passwordEl.value.length >= 8) {
     if (regexStrong.test(passwordEl.value)) {
       passHelp.classList.remove("d-none");
       passHelp.classList.add("text-success");
       passHelp.textContent = "Le mot de passe est fort";
-      console.log("fort");
+      // console.log("fort");
     } else if (regexAverage.test(passwordEl.value)) {
       passHelp.classList.remove("d-none");
       passHelp.textContent = "Le mot de passe est moyen";
       passHelp.classList.add("text-warning");
-      console.log("medium");
+      // console.log("medium");
     } else if (regexWeak.test(passwordEl.value)) {
       passHelp.classList.remove("d-none");
       passHelp.textContent = "Le mot de passe est faible";
-      console.log("weak2");
+      passHelp.classList.add("text-danger");
+      // console.log("weak2");
     } else {
       passHelp.classList.remove("d-none");
       passHelp.textContent = "Le mot de passe est très faible";
-      console.log("weak1");
+      passHelp.classList.add("text-danger");
+      // console.log("weak1");
     }
   }
 };
