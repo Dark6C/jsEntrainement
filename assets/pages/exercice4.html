@@ -65,8 +65,8 @@
         </ul>
       </div>
       <div>
-        <form action="" class="row mt-5">
-          <div class="form-group col-lg-6 d-flex justify-content-center">
+        <form action="" class="row mt-5" id="mainForm">
+          <div class="form-group col-lg-4 d-flex justify-content-center">
             <div>
               <label for="name" class="mb-1 mt-3 fw-semibold">Entrer votre nom :
 
@@ -75,7 +75,7 @@
 
             </div>
           </div>
-          <div class="form-group col-lg-6 d-flex justify-content-center">
+          <div class="form-group col-lg-4 d-flex justify-content-center">
             <div>
               <label for="name" class="mb-1 mt-3 fw-semibold">Entrer votre prénom :
 
@@ -84,7 +84,7 @@
 
             </div>
           </div>
-          <div class="form-group col-lg-6 d-flex justify-content-center">
+          <div class="form-group col-lg-4 d-flex justify-content-center">
             <div>
               <label for="email" class="mb-1 mt-3 fw-semibold">Entrer votre email :
 
@@ -97,15 +97,19 @@
         </form>
 
       </div>
-      <div class=" form-group col-lg-6 d-flex justify-content-center"><button type="button" class="mt-2" onclick="ajouterChamp()">Ajouter une personne</button>
-        <br><br>
-        <input type="submit" class="mt-2" value="Valider l'inscription">
+      <div class=" form-group col-lg-6 d-flex justify-content-center">
+        <button type="button" id="newFormUser" class="mt-2 bg-danger-subtle">Ajouter une personne</button>
+        
+        <input type="submit" class="mt-2 bg-success-subtle" value="Valider l'inscription" id="formSubmit">
       </div>
 
-      <script defer src="../js/script1.js"></script>
+      <script defer src="../js/scriptExo4.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+      </div>
+    </div>    
+  </div>
 </body>
 
 </html>
